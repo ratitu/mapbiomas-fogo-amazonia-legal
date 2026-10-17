@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Área Queimada na Amazônia Legal — MapBiomas Fogo</title>
+  <meta
+    name="description"
+    content="Comparação da área queimada na Amazônia Legal em dois períodos, com MapBiomas Fogo e imagem de satélite Esri."
+  />
+
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://server.arcgisonline.com" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__left">
+      <h1 class="topbar__title">Fogo na Amazônia Legal</h1>
+      <p class="topbar__subtitle">
+        Área queimada comparada em dois períodos &middot; fonte:
+        <a href="https://plataforma.monitorfogo.mapbiomas.org/" target="_blank" rel="noopener">MapBiomas Fogo</a>
+        &middot; imagem de satélite Esri
+      </p>
+    </div>
+    <div class="topbar__controls">
+      <label class="toggle">
+        <input type="checkbox" id="toggle-boundary" checked />
+        <span>Limite da Amazônia Legal</span>
+      </label>
+      <label class="toggle">
+        <input type="checkbox" id="toggle-sync" checked />
+        <span>Sincronizar mapas</span>
+      </label>
+      <button id="reset-view" class="btn" type="button">Recentralizar</button>
+    </div>
+  </header>
+
+  <main class="maps" id="maps">
+    <!-- Period 1 -->
+    <section class="map-pane" data-period="period1">
+      <div class="map-pane__head">
+        <div>
+          <span class="map-pane__badge map-pane__badge--p1">Período 1</span>
+          <h2 class="map-pane__title">2023 – 2026</h2>
+          <p class="map-pane__caption">jan/2023 a out/2026 (2026 parcial)</p>
+        </div>
+        <div class="map-pane__stat">
+          <span class="map-pane__stat-value" id="stat-period1">—</span>
+          <span class="map-pane__stat-label">hectares queimados</span>
+        </div>
+      </div>
+      <div class="map-pane__map" id="map-period1"></div>
+      <div class="map-pane__legend" id="legend-period1"></div>
+      <div class="map-pane__status" id="status-period1" aria-live="polite"></div>
+    </section>
+
+    <!-- Period 2 -->
+    <section class="map-pane" data-period="period2">
+      <div class="map-pane__head">
+        <div>
+          <span class="map-pane__badge map-pane__badge--p2">Período 2</span>
+          <h2 class="map-pane__title">2019 – 2022</h2>
+          <p class="map-pane__caption">jan/2019 a dez/2022</p>
+        </div>
+        <div class="map-pane__stat">
+          <span class="map-pane__stat-value" id="stat-period2">—</span>
+          <span class="map-pane__stat-label">hectares queimados</span>
+        </div>
+      </div>
+      <div class="map-pane__map" id="map-period2"></div>
+      <div class="map-pane__legend" id="legend-period2"></div>
+      <div class="map-pane__status" id="status-period2" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footbar">
+    <div class="footbar__note">
+      Todas as cicatrizes de fogo do período aparecem em <strong>vermelho</strong>; onde há
+      reincidência, a marca fica mais intensa. Os dados são carregados ao vivo da API do MapBiomas Fogo.
+    </div>
+    <div class="footbar__source">
+      Limite: <code>Limites_Amazonia_Legal_2024.geojson</code>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
