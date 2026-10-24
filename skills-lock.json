@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "skills": {
+    "detect-objects": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/detect-objects/SKILL.md",
+      "computedHash": "038af8bc0b68bb2a20ff5fd601ba4ea8c9324f8f362c44544ea0feea5efd3bf2"
+    },
+    "gdal": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gdal/SKILL.md",
+      "computedHash": "d31395567c2102467fbed908b827710ba635a2428d4a2c328a15bbfdf285f246"
+    },
+    "geoparquet-validation": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/geoparquet-validation/SKILL.md",
+      "computedHash": "7a087a4100746df27d550d1bdb2cfc190b7627f53089560bbaae5a0c75084fe0"
+    },
+    "geospatial-frontend": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/geospatial-frontend/SKILL.md",
+      "computedHash": "133d8772b37be625f014f9d70460202142b1536722bfa7ab6a758d2c974b71e6"
+    },
+    "geospatial-viewers": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/geospatial-viewers/SKILL.md",
+      "computedHash": "24d61c23a1baa7b9251fc0439953f07ca39ee9f46b30991401080f2e6c4d450c"
+    },
+    "overture-data": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/overture-data/SKILL.md",
+      "computedHash": "d8e4f7b1b52125cedfd2a1b5441fe8ec4dd3954e9b62393fa80b2f9630d352c4"
+    },
+    "parallel-geospatial": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/parallel-geospatial/SKILL.md",
+      "computedHash": "54b9cef88fba5d46d00587c944d295a1c4109d0227f81aafbfa2cc2c37b9963c"
+    },
+    "planet-bulk-download": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/planet-bulk-download/SKILL.md",
+      "computedHash": "8f7f3e2311c48602d803ac04e14f55e5b62b6204cf5513059fd1693a38682231"
+    },
+    "pmtiles-pipeline": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/pmtiles-pipeline/SKILL.md",
+      "computedHash": "6814af52e4ff969bb2595a4a7ba11a869c82fcf73e888ebffce6b14b2228ddfe"
+    },
+    "portolan-bootstrap": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/portolan-bootstrap/SKILL.md",
+      "computedHash": "b68934083ccfb9348a7b721ee828cde9a498f5203b51099a9cd7d5143d44ed64"
+    },
+    "portolan-cli": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/portolan-cli/SKILL.md",
+      "computedHash": "d271d5616fe1af29f588612a7972e7887b91e4ebb06e8f718960f651ac7c9f85"
+    },
+    "portolan-thumbnails": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/portolan-thumbnails/SKILL.md",
+      "computedHash": "28efe41d4b7037eb02b32a60d611ff9166317e6a8052bbc3527232c8d281192e"
+    },
+    "reading-portolan": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/reading-portolan/SKILL.md",
+      "computedHash": "78fe893bbcd25a2b1859739f0f7fe8abb96fa0c5439a086108a565b62ba3d9cb"
+    },
+    "register-catalog": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/register-catalog/SKILL.md",
+      "computedHash": "a1f0c0d7be7ab24ba2966f44a71ea358469cf09406270b63bab18ba5d41fb0fd"
+    },
+    "search-stac": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/search-stac/SKILL.md",
+      "computedHash": "fe75315e9ed89793f07f8204579ed44122d25670e57f79ee8ea811e1e31a53b1"
+    },
+    "sourcecoop": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/sourcecoop/SKILL.md",
+      "computedHash": "7837e42467225f9c420da27cdc2bb638b5cd65ca5e6b34c59c15e33793ccec6f"
+    },
+    "tessera": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/tessera/SKILL.md",
+      "computedHash": "73bab87c04081c39d5e59d7500a35118c50421d3c92604b5c53ece8ac5c30b78"
+    },
+    "zarr-multiscales": {
+      "source": "isaaccorley/geospatial-skills",
+      "sourceType": "github",
+      "skillPath": "skills/zarr-multiscales/SKILL.md",
+      "computedHash": "cdb487aa84119c18005bca7a58c7e255529d5344ba22d908e27565c39a185359"
+    }
+  }
+}

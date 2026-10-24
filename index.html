@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fogo na Amazônia Legal — MapBiomas Fogo</title>
+    <meta
+      name="description"
+      content="Área queimada na Amazônia Legal com MapBiomas Fogo e MapLibre Globe"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-CKvWVL-9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ChniP1nP.css">
+  </head>
+  <body>
+    <div class="viewport">
+      <div id="map"></div>
+      <div class="brand glass-panel">
+        <div class="brand-orbit">
+          <svg class="brand-ring" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="14" fill="none" stroke="rgba(208,84,44,0.4)" stroke-width="1" stroke-dasharray="6 6" />
+          </svg>
+          <svg class="brand-ring-2" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="10" fill="none" stroke="rgba(229,168,83,0.35)" stroke-width="1" stroke-dasharray="4 8" />
+          </svg>
+          <div class="brand-dot"></div>
+        </div>
+        <div class="brand-text">
+          <h1>Fogo na Amazônia Legal</h1>
+          <p>MapBiomas Fogo · Globo MapLibre</p>
+        </div>
+      </div>
+
+      <div class="search glass-panel">
+        <span class="search-label">Períodos</span>
+        <div class="view-tabs">
+          <button class="view-tab is-active" data-view="comparison">Comparação</button>
+          <button class="view-tab" data-view="period1">2023–2026</button>
+          <button class="view-tab" data-view="period2">2019–2022</button>
+        </div>
+      </div>
+
+      <div class="status glass-panel">
+        <span class="status-dot"></span>
+        <span class="status-text">Carregando dados de fogo…</span>
+      </div>
+
+      <aside class="panel panel-left glass-panel">
+        <header class="panel-header">
+          <div>
+            <span class="kicker">Mapa</span>
+            <h2>Área queimada</h2>
+          </div>
+        </header>
+        <div class="panel-section">
+          <div class="section-row">
+            <span class="mono">Período 1</span>
+            <span class="chip" id="stat-period1">— ha</span>
+          </div>
+          <div class="section-row">
+            <span class="mono">Período 2</span>
+            <span class="chip chip-alt" id="stat-period2">— ha</span>
+          </div>
+        </div>
+        <div class="panel-section">
+          <span class="kicker">Camadas</span>
+          <label class="toggle-row">
+            <input type="checkbox" id="toggle-boundary" checked />
+            <span>Limite da Amazônia Legal</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="toggle-sync" checked />
+            <span>Sincronizar visão</span>
+          </label>
+        </div>
+        <footer class="panel-footer">
+          <button id="reset-view" class="btn-primary">Recentralizar</button>
+        </footer>
+      </aside>
+
+      <div class="attribution">
+        <a href="https://github.com/ratitu" target="_blank" rel="noopener">Created by ratitu</a> · Dados: MapBiomas Fogo · Imagem: Esri
+      </div>
+    </div>
+  </body>
+</html>
