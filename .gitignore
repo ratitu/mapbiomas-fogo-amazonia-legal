@@ -3,6 +3,15 @@
 .playwright-mcp/
 session-*.md
 
+# Heavy data and render artifacts (regenerable — keep out of git history)
+timelapse/frames/
+timelapse/frames_1920x1080/
+timelapse/cache/
+fogo_amazonia_legal_2026_jun_set_daily.gif
+bdqueimadas_*.geojson
+bdqueimadas_*.zip
+pm_atropela.jpg
+
 # Python
 __pycache__/
 *.py[cod]

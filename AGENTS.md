@@ -14,7 +14,12 @@ artefatos independentes:
 2. `website/` — site estático (HTML/CSS/JS puro) com dois mapas MapLibre GL JS
    sincronizados, sem bundler, sem `package.json`, sem dependências instaláveis.
 
-**Não é um repositório git.**
+Repositório **git**, com remoto `github.com:ratitu/mapbiomas-fogo-amazonia-legal`
+(branch `main`) e deploy no **GitHub Pages** pelo workflow
+`.github/workflows/deploy-pages.yml`, que publica `website-globe/` — o `website/`
+não é publicado, roda só local.
+Boa parte do trabalho recente — `timelapse/`, `design/`, GIFs/MP4s, legendas e os
+GeoJSON brutos — está **untracked**. Nunca commitar/pushar sem pedido explícito.
 
 ## Mapa do repositório
 
@@ -28,6 +33,12 @@ artefatos independentes:
 | `website/js/app.js` | Toda a lógica dos mapas (~331 linhas). **Arquivo central.** |
 | `website/data/limites_amazonia_legal.geojson` | Contorno simplificado (197 KB) usado pelo site. |
 | `website-verify.png` | Screenshot de verificação (evidência, não fonte). |
+| `design/deckmap.py` | **Design system** dos vídeos de mapa: tokens, escala tipográfica, geometria dos dois formatos, camadas, chrome e marca d'água. |
+| `design/DESIGN.md` | Especificação do design system (tokens, grades, componentes, regras, verificação). |
+| `design/exemplo.py` | Produto de exemplo que reaproveita o design com dados sintéticos (sem rede). |
+| `timelapse/render_timelapse.py` | Produto: timelapse semanal dos focos (1 frame = 1 semana), `--size portrait\|landscape`. Consome `design/deckmap.py`. |
+| `timelapse/frames/`, `timelapse/frames_1920x1080/` | 25 PNGs por formato (~117 MB). Recurso pesado. |
+| `timelapse/focos_amazonia_legal_2026_*.mp4` | Entregáveis finais dos dois formatos. |
 | `session-ses_eb7f.md`, `.omo/`, `.playwright-mcp/` | Artefatos de sessão/ferramentas. Não editar. |
 
 ## Comandos
@@ -51,7 +62,36 @@ python3 fetch_burned_area_legal_amazon.py
 # Re-simplificar o contorno (se precisar regerar o arquivo do site)
 /home/ratitu/miniconda3/envs/qgis_env/bin/ogr2ogr -simplify 0.005 \
   /tmp/limites_simplified2.geojson Limites_Amazonia_Legal_2024.geojson
+
+# Design system: produto de exemplo (dados sintéticos, sem rede)
+/home/ratitu/miniconda3/envs/qgis_env/bin/python design/exemplo.py
+
+# Timelapse (requer cairosvg + numpy + pillow + requests no env qgis_env)
+/home/ratitu/miniconda3/envs/qgis_env/bin/python timelapse/render_timelapse.py --size landscape
+/home/ratitu/miniconda3/envs/qgis_env/bin/python timelapse/render_timelapse.py --size portrait --only 24
 ```
+
+## Design system (vídeos de mapa)
+
+Vídeo/imagem de mapa novo **reaproveita** [design/deckmap.py](design/deckmap.py);
+não copie geometria nem cor para dentro do script do produto.
+
+- **Especificação completa:** [design/DESIGN.md](design/DESIGN.md) (tokens,
+  escala tipográfica, grades de y por formato, componentes, regras).
+- **O que fica no `deckmap.py`:** paleta, tipografia, `trata_satelite`,
+  `camada_limite`, `camada_pontos`, `compor` (chrome dos dois formatos),
+  `marca_dagua`, `Spec`.
+- **O que fica no produto:** dados, projeção/enquadramento, textos do `Spec`,
+  sequência de frames + ffmpeg.
+- **Dois formatos = dois desenhos.** Vertical 1080×1920 e horizontal 1920×1080
+  têm grades próprias; não derive um do outro por escala.
+- **Uma cor de acento só** (`ACCENT`) — ela marca apenas a semana/quadro corrente.
+- **Marca d'água:** canto inferior direito, 112 px, margens 40/32, opacidade
+  0,92. A caixa do selo precisa estar **vazia** — verifique projetando os pontos
+  e os vértices do território antes de fixar a posição.
+- **Contrato de não-regressão:** se `deckmap.py` mudar, re-renderize e compare
+  pixel a pixel com os PNGs aprovados; MAE tem que ser 0. Foi assim que o
+  renderer foi migrado para o módulo (25 frames × 2 formatos, MAE 0,0).
 
 ## Convenções de código
 

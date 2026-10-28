@@ -145,4 +145,8 @@ Endpoints usados/relevantes:
 
 - Unidade: **hectares (ha)**.
 - 2026 é parcial (até outubro).
-- O repositório **não** é um repositório git.
+- O repositório **é** git: remoto `github.com:ratitu/mapbiomas-fogo-amazonia-legal`,
+  branch `main`, publicado no **GitHub Pages** pelo workflow
+  `.github/workflows/deploy-pages.yml` a partir de `website-globe/` — o `website/`
+  não é publicado. Apenas uma parte do projeto está versionada — os vídeos, o
+  design system e os dados brutos estão fora do controle de versão.

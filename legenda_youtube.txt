@@ -1,0 +1,51 @@
+Focos de calor na Amazônia Legal, semana a semana — 04/05 a 25/10 de 2026
+
+Vinte e cinco semanas de fogo na Amazônia Legal em 25 segundos. Cada frame é uma semana completa (segunda a domingo); cada ponto é um foco de calor detectado por satélite pelo BDQueimadas, do INPE. O tamanho e o tom do ponto acompanham o FRP — a potência radiativa do fogo, em megawatts: quanto maior e mais quente, mais energia aquela frente de queimada está liberando.
+
+O resultado é uma curva que não engana: o período começa quase vazio e termina no maior pico da série, na última semana de outubro.
+
+COMO LER O VÍDEO
+• Cada frame = 1 semana. A animação roda a 1 frame por segundo: 25 semanas em 25 segundos.
+• O mapa é sempre o mesmo — a Amazônia Legal inteira, do Acre ao Maranhão. O que muda é o fogo, não o enquadramento.
+• O ponto grande e claro é fogo intenso (FRP alto); o pequeno e escuro é foco fraco. A escala fica na legenda do canto.
+• No rodapé, as barras mostram a temporada inteira. A barra acesa é a semana que está na tela; as apagadas à direita são o que ainda vai acontecer.
+• O número grande é o total de focos daquela semana; o menor, ao lado, o acumulado desde o início.
+
+OS NÚMEROS DO PERÍODO
+• 59.405 focos de calor em 25 semanas completas (04/05 a 25/10/2026).
+• Pico: 19 a 25 de outubro, com 6.199 focos — 10,4% de tudo o que foi registrado em um único frame.
+• Vale: 11 a 17 de maio, com 297 focos. A diferença entre o pico e o vale é de 21 vezes.
+• Média de 2.376 focos por semana; mediana de 1.028. A média é quase 2,3 vezes a mediana: poucas semanas puxam o número para cima.
+• 15 das 25 semanas passaram de 1.000 focos; 8 passaram de 4.000; 1 passou de 6.000.
+• Da primeira à última semana, o volume cresceu 12,8 vezes (485 → 6.199).
+• Até 26 de julho, 12 semanas somaram 8.519 focos (14,3% do total). De 27 de julho a 25 de outubro, 13 semanas somaram 50.886 (85,7%). É aqui que a temporada acontece.
+• As cinco semanas mais quentes: 19–25/10 (6.199), 12–18/10 (5.699), 05–11/10 (4.838), 21–27/09 (4.514) e 17–23/08 (4.445).
+
+ONDE O FOGO SE CONCENTROU
+• Pará lidera com 34,8% dos focos, seguido por Mato Grosso (15,7%), Tocantins (14,9%), Amazonas (14,0%) e Maranhão (11,8%). Juntos, esses cinco estados respondem por 91,2% do total.
+• Acre (3,6%), Rondônia (2,2%) e Amapá (1,8%) fecham a lista.
+• Por bioma: 69,4% na Amazônia, 30,3% no Cerrado e 0,3% no Pantanal. Quase um terço dos focos da Amazônia Legal está no Cerrado — a fronteira agrícola do Mato Grosso, do Tocantins e do sul do Maranhão.
+• Os municípios com mais focos: Altamira (2.032), São Félix do Xingu (1.788), Itaituba (1.328), Lagoa da Confusão (1.062) e Apuí (1.008).
+• Intensidade: 79,0% dos focos ficaram abaixo de 50 MW, 19,5% entre 50 e 300 MW e apenas 1,5% acima de 300 MW. A mediana foi de 20,2 MW e o maior registro chegou a 3.824,2 MW.
+• Somando as semanas, o FRP acumulado passa de 2,58 milhões de MW.
+
+COMO FOI FEITO
+Os dados são públicos: BDQueimadas do INPE, o mesmo sistema que alimenta os boletins oficiais de queimadas. O recorte original trazia 59.709 registros entre 1º de maio e 26 de outubro de 2026. Para que todo frame tivesse exatamente 7 dias, usei apenas semanas completas de segunda a domingo — 04/05 a 25/10. Ficaram de fora 304 registros dos três dias iniciais e da cauda de 26 de outubro.
+
+O limite da Amazônia Legal vem do MapBiomas/IBGE (2024). O fundo é imagem de satélite Esri World Imagery em zoom 8, escurecida e dessaturada para o fogo aparecer na frente. Os focos são desenhados como brilho aditivo em tons de vermelho, com tamanho e cor proporcionais ao logaritmo do FRP. O enquadramento é fixo, calculado para caber a Amazônia Legal inteira em todos os frames.
+
+O QUE ESTE VÍDEO NÃO MOSTRA
+• Foco de calor não é área queimada. Um ponto é uma detecção de anomalia térmica, não um polígono de cicatriz de fogo; para área queimada, a referência é o MapBiomas Fogo.
+• Todos os 59.405 registros vieram do satélite AQUA (sensor MODIS, passagem do início da tarde) — uma passagem por dia. Fogo que começa e termina entre duas passagens pode não ser visto.
+• Nuvem esconde fogo: em semanas de tempo fechado, a queda no gráfico pode ser de detecção, não de queimada.
+• Cada detecção tem resolução de cerca de 1 km. Um ponto pode representar uma frente grande ou várias pequenas.
+• Dados de 2026 são preliminares e podem ser revisados pelo INPE.
+
+FONTES
+Focos de calor: INPE / BDQueimadas (satélite AQUA, sensor MODIS)
+Limite territorial: MapBiomas / IBGE — Amazônia Legal 2024
+Imagem de fundo: Esri World Imagery
+Animação e gráficos: este canal
+
+
+#Queimadas #AmazôniaLegal #Amazônia #Fogo #IncêndiosFlorestais #BDQueimadas #INPE #MapBiomas #Cerrado #MatoGrosso #Pará #Tocantins #Amazonas #Maranhão #Desmatamento #MudançasClimáticas #MonitoramentoAmbiental #SensoriamentoRemoto #Satélite #Geoespacial #MeioAmbiente #Brasil
